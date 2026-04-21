@@ -6,6 +6,7 @@
   <meta name="color-scheme" content="light">
   <meta name="description" content="Divisão de herança e guia estratégico de venda de imóvel com múltiplos herdeiros e ramificações internacionais.">
   <title>Herança Odivelas — Divisão &amp; Guia de Venda</title>
+  <link rel="icon" href="favicon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -762,6 +763,16 @@
       <span class="nav-label">Workflow Legal</span>
     </button>
 
+    <button class="planav-item" onclick="navTo('//zeluis.github.io/fpipt/HOUSE-PT/Odivelas_Renovation_Master_V17-FPI')" aria-current="false" aria-label="Workflow Legal"></button>
+      <a href="https://zeluis.github.io/fpipt/HOUSE-PT/Odivelas_Renovation_Master_V17-FPI" target="_blank">
+        <div class="nav-icon-box" aria-hidden="true">
+          <span class="material-symbols-outlined">account_tree</span>
+        </div>
+        <span class="nav-label">Renov Planer</span>
+      </a>
+    </button>
+    
+
   </nav>
 
   <!-- Main wrapper -->
@@ -1252,6 +1263,11 @@
           item.setAttribute('aria-current', 'page');
         }
       });
+      document.querySelectorAll('.planav-item').forEach(item => {
+        const oc = item.getAttribute('onclick') || '';
+        
+      });
+      
       currentSection = secId;
       updateNextBtn();
       window.scrollTo({ top: 0, behavior: 'smooth' });
